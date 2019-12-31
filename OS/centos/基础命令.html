@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础命令 | 落秋&#39;s Blog</title>
+    <meta name="description" content="落秋的博客">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon-32x32.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <link rel="manifest" href="/manifest.json">
+    
+    <link rel="preload" href="/assets/css/0.styles.2494eac4.css" as="style"><link rel="preload" href="/assets/js/app.1359ccd0.js" as="script"><link rel="preload" href="/assets/js/3.8181c1a2.js" as="script"><link rel="preload" href="/assets/js/2.123d0642.js" as="script"><link rel="preload" href="/assets/js/13.d108468c.js" as="script"><link rel="preload" href="/assets/js/5.e71e65e1.js" as="script"><link rel="prefetch" href="/assets/js/10.68cddf6d.js"><link rel="prefetch" href="/assets/js/11.9bf6bf26.js"><link rel="prefetch" href="/assets/js/12.84cda420.js"><link rel="prefetch" href="/assets/js/14.2353581d.js"><link rel="prefetch" href="/assets/js/15.15d6fa0c.js"><link rel="prefetch" href="/assets/js/4.e00e807e.js"><link rel="prefetch" href="/assets/js/6.4494aef5.js"><link rel="prefetch" href="/assets/js/7.9005f237.js"><link rel="prefetch" href="/assets/js/8.ee5ad8b3.js"><link rel="prefetch" href="/assets/js/9.ea79421c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2494eac4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">落秋's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/Note/" class="nav-link">Note</a></div><div class="nav-item"><a href="/MySQL/SQL查询语句的执行过程.html" class="nav-link">MySQL</a></div> <a href="https://github.com/k-liaojiale/k-vuepress-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/Note/" class="nav-link">Note</a></div><div class="nav-item"><a href="/MySQL/SQL查询语句的执行过程.html" class="nav-link">MySQL</a></div> <a href="https://github.com/k-liaojiale/k-vuepress-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="管理用户相关命令"><a href="#管理用户相关命令" aria-hidden="true" class="header-anchor">#</a> 管理用户相关命令</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">useradd</span>    <span class="token comment"># 添加用户</span>
+adduser    <span class="token comment"># 添加用户</span>
+<span class="token function">passwd</span>     <span class="token comment"># 为用户设置密码</span>
+<span class="token function">usermod</span>    <span class="token comment"># 修改用户命令，可以通过usermod 来修改登录名、用户的家目录等等</span>
+<span class="token function">id</span>         <span class="token comment"># 查看用户的UID、GID及所归属的用户组</span>
+<span class="token function">su</span>         <span class="token comment"># 用户切换工具</span>
+<span class="token function">sudo</span>       <span class="token comment"># sudo 是通过另一个用户来执行命令（execute a command as another user</span>
+</code></pre></div><ul><li>useradd可选参数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>-c：加上备注文字，备注文字保存在passwd的备注栏中。
+-d：指定用户登入时的主目录，替换系统默认值/home/&lt;用户名&gt;
+-D：变更预设值。
+-e：指定账号的失效日期，日期格式为MM/DD/YY，例如06/30/12。缺省表示永久有效。
+-f：指定在密码过期后多少天即关闭该账号。如果为0账号立即被停用；如果为-1则账号一直可用。默认值为-1.
+-g：指定用户所属的群组。值可以使组名也可以是GID。用户组必须已经存在的，期默认值为100，即users。
+-G：指定用户所属的附加群组。
+-m：自动建立用户的登入目录。
+-M：不要自动建立用户的登入目录。
+-n：取消建立以用户名称为名的群组。
+-r：建立系统账号。
+-s：指定用户登入后所使用的shell。默认值为/bin/bash。
+-u：指定用户ID号。该值在系统中必须是唯一的。0~499默认是保留给系统用户账号使用的，所以该值必须大于499。
+</code></pre></div><ul><li>usermod可选参数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>-c&lt;REMARKS&gt;     : 修改用户帐号的备注文字。
+-d&lt;DIR&gt;         : 修改用户登入时的目录。
+-e&lt;LIMIT_TIME&gt;  : 修改帐号的有效期限。
+-f&lt;DAYS&gt;        : 修改在密码过期后多少天即关闭该帐号。
+-g&lt;GROUP_NAME&gt;  : 修改用户所属的群组。
+-G&lt;GROUP_NAME&gt;  : 修改用户所属的附加群组。
+-l&lt;USER_NAME&gt;   : 修改用户帐号名称。
+-L              : 锁定用户密码，使密码无效。
+-s&lt;SHELL&gt;       : 修改用户登入后所使用的shell。
+-u&lt;UID&gt;         : 修改用户ID。
+-U              : 解除密码锁定。
+</code></pre></div><h2 id="管理用户组相关命令"><a href="#管理用户组相关命令" aria-hidden="true" class="header-anchor">#</a> 管理用户组相关命令</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">groupadd</span>   <span class="token comment"># 添加用户组；</span>
+<span class="token function">groupdel</span>   <span class="token comment"># 删除用户组；</span>
+<span class="token function">groupmod</span>   <span class="token comment"># 修改用户组信息</span>
+<span class="token function">groups</span>     <span class="token comment"># 显示用户所属的用户组</span>
+gpasswd    <span class="token comment"># 把用户添加进组或从组中删除</span>
+newgrp     <span class="token comment"># 切换用户的有效组</span>
+</code></pre></div><ul><li>gpasswd可选参数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>''                        : 选项为空时, 表示给群组设置密码(仅 root 用户可用)
+-A user1,... [GROUP_NAME] ：指定管理员(仅 root 用户可用)
+-M user1,... [GROUP_NAME] ：指定组成员(仅 root 用户可用)
+-r                        ：移除群组的密码(仅 root 用户可用)
+-R                        ：限制用户登入组，只有组中的成员才可以用newgrp加入该组(仅 root 用户可用)
+-a user                   : 添加用户到组(仅 root 用户可用)
+-d user                   : 从组删除用户
+</code></pre></div><h2 id="其它"><a href="#其它" aria-hidden="true" class="header-anchor">#</a> 其它</h2> <ul><li>查看用户</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cat</span> /etc/passwd
+<span class="token function">cat</span> /etc/passwd <span class="token operator">|</span> <span class="token function">grep</span> <span class="token operator">&lt;</span>USER_NAME<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>查看用户组</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cat</span> /etc/group
+<span class="token function">cat</span> /etc/group <span class="token operator">|</span> <span class="token function">grep</span> <span class="token operator">&lt;</span>GROUP_NAME<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2019-10-10 16:49:40</span></div></footer> <!---->  <div class="vcomment"><div id="vcomments"></div></div></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.1359ccd0.js" defer></script><script src="/assets/js/3.8181c1a2.js" defer></script><script src="/assets/js/2.123d0642.js" defer></script><script src="/assets/js/13.d108468c.js" defer></script><script src="/assets/js/5.e71e65e1.js" defer></script>
+  </body>
+</html>
